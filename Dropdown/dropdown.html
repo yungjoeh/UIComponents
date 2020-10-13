@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .dropdown {
+        background: #0F1B9E8;
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+      }
+      
+      .dropTitle {
+        padding: 7px;
+        border: none;
+        font-size: 1.3rem;
+        color: white;
+        background: #0F1B99;
+        cursor: pointer;
+        outline: none;
+      }
+      
+      .dropdown-menu {
+        position: absolute;
+        background: #ccc;
+        width: 100%;
+        top: 39px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 500ms ease-in;
+      }
+      
+      .dropdown-menu p {
+        padding: 5px 8px;
+        border-bottom: 1px solid rgb(255,255,255,0.5);
+        color: #555;
+      }
+      
+      .dropdown-menu p::last-child {
+        border-bottom: none;
+      }
+      
+      .show{
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="dropdown">
+    <button class="dropTitle">Dropdown</button>
+    <div class="dropdown-menu">
+      <p>Home</p>
+      <p>About</p>
+      <p>Contact</p>
+    </div>
+  </div>
+  
+  
+  
+  <script>
+    const btn = document.querySelector('.dropTitle');
+    const dropMenu = document.querySelector('.dropdown-menu');
+    
+    btn.addEventListener('click', () => {
+      dropMenu.classList.toggle("show");
+    });
+    
+    const arr = [{
+      name: "kanayo"
+    },
+    {
+      name: "mumsi"
+    }
+    ]
+    
+    const edited = arr.findIndex(i => i.name === "mumsi");
+    arr[edited].name = "kamai";
+    console.log(arr)
+    console.log(edited)
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: #eee;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  display: inline-block;
+  text-align: center;
+  flex-gap: 20px;
+}
+
+button {
+  border: 2px solid #999;
+  color: #CA22A4;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  outline: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 4%;
+}
+
+.title {
+  margin: 9px 0;
+  font-size: 3.5rem;
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+form {
+  margin: 25px 0 10px 0;
+  width: 100%;
+}
+
+[type=text] {
+  padding: 9px 12px;
+  width: 100%;
+  outline: none;
+}
+
+.searchDiv {
+  display: flex;
+  width: 100%;
+}
+
+i {
+  padding: 5px 10px;
+  background: #CA22A4;
+  color: #fff;
+  font-weight: bold;
+  line-height: calc(100% + 10px);
+}
+
+::placeholder {
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+
+.products {
+  margin-top: 20px;  
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 19px;
+}
+
+.product-card {
+  box-shadow: -2px 3px 5px #fff, -3px 4px 6px #555;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.card-top {
+  height: 150px;
+  background: #777;
+}
+
+.card-footer {
+  width: 100%;
+  padding: 9px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-footer span {
+  font-weight: bold;
+  font-size: 1.034rem;
+}

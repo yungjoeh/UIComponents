@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+  <p>
+    <span>00 : </span>
+    <span>00 : </span>
+    <span>00 : </span>
+    <span>00 </span>
+  </p>
+  
+  
+  <script>
+  const p = document.querySelector('p');
+  
+  
+    /*const timer = () => {
+      const diff = +new Date("2020-09-31") - +new Date();
+      if(diff > 0) {
+      const parts = {
+        days: Math.floor(diff / (1000*24*60*60)),
+        hours: Math.floor(diff / (1000*60*60) % 24),
+        minutes: Math.floor((diff / 1000/ 60) % 60),
+        seconds: Math.floor((diff / 1000) % 60)
+      }
+      
+      let remaining = Object.keys(parts).map(part => {
+        if(!parts[part]) return;
+        return `${parts[part]} ${part}`;
+      }).join(' ')
+      
+        p.innerHTML = remaining;
+      }
+    }
+    
+   timer();
+   setInterval(timer , 1000); */
+   function twoFer (x) {
+     if(!x) return `One for you, one for me`
+     return `One for ${x}, one for me`;
+   }
+   
+   let two = twoFer("kanayo");
+   
+   const colorArr = [
+     "Black",
+     "Brown",
+     "Red",
+     "Orange",
+    "Yellow",
+     "Green",
+     "Blue",
+    "Violet",
+     "Grey",
+     "White"
+     ];
+     
+     let matrix =
+ `1 2 3
+4 5 6
+7 8 9`;
+     
+     function list(bands) {
+       return bands.map((band, i) => {
+         return `${band}: ${i}`;
+       });
+     }
+     
+     function getRows(matrix) {
+      let rows = matrix.split(/\n/).map();
+      return rows;
+     }
+    
+    function getColumns(matrix) {
+      let columns = matrix.split(/\n/);
+      columns.map(col => {
+        
+      })
+    }
+    
+    let rows =  getRows(matrix);
+    console.log(rows);
+  </script>
+</body>
+
+</html>
